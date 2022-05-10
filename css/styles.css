@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 .imgbrand {
   margin-top: 2px;
   margin-left: 0px;
@@ -5,10 +10,10 @@
   height: 7%;
 }
 .navbar navbar-light bg-light {
-  background-color: white;
+  background-color: rgba(41, 187, 212, 0.096);
 }
 .container-fluid {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 #titulo {
   margin-right: 78%;
@@ -19,29 +24,105 @@
 h6 {
   font-size: 8pt;
 }
-navbar-toggler {
-}
+
 header {
   margin-top: 2px;
 }
+main {
+  background-color: rgba(0, 171, 201, 0.116);
+}
+#linha {
+  display: flex;
+  flex-direction: row;
+  /* realizar a quebra de linha para os demais produtos que forem adicionados */
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+#linha #produto {
+  width: 300px;
+  margin-left: 10px;
+  /* determinar que o conteudo do proudto será flexivel */
+  flex-direction: row;
+  margin-right: 3%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 81, 255, 0.164);
+  margin-top: 50px;
+}
+#descricao {
+  width: 100%;
+  margin: 10px;
+  padding-left: 10px;
+  transition: ease 2s;
+  flex-direction: row;
+}
+
+#linha #produto #imgprod img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.textomain {
+  font-size: 10px;
+  padding-top: 120px;
+}
+h4 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20pt;
+  width: 50%;
+}
+#descricao img {
+  width: 30px;
+  height: 30px;
+}
+#redes {
+  position: absolute;
+  right: 50px;
+}
+#redes .link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+#redes ul {
+  /* retirar as bolinhas de marcação */
+  list-style: none;
+}
+
+/* vamos dispor as imagens das redes em linha com o display inline-block */
+#redes ul li {
+  display: inline-block;
+  margin: 10px;
+}
+#redes ul li a img {
+  width: 35px;
+  height: 35px;
+}
+
+/* -------------------------SOBRE-NOS----------------------------------- */
 #imghome {
   text-align: center;
+  padding-bottom: 100px;
 }
 #imghome img {
-  width: 200px;
-  height: 200px;
-  opacity: 0.9;
+  width: 400px;
+  height: 400px;
+  border-radius: 250px;
+  opacity: 0.7;
   margin: 20px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  transition: ease 0.5s;
+  transition: ease 2s;
+  transform: scale(0.9);
 }
 #imghome img:hover {
   opacity: 1;
   /* width: 500px;
   height: 500px; */
   transform: scale(1.2);
+  /* transform: rotate(2deg); */
 }
-#textomain {
-  font-size: 10px;
+h5 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15pt;
 }
