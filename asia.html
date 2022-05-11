@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBox</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <img class="imgbrand" src= images/foto.png alt="">
+        <div id ="titulo" >  
+          <h3>TravelBox</h3>
+            <h6>Seu Melhor Guia de Viagens</h6>
+      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Continentes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="americanorte.html">America Do Norte</a></li>
+                  <li><a class="dropdown-item" href="americasul.html">America do Sul</a></li>
+                  <li><a class="dropdown-item" href="europa.html">Europa</a></li>
+                  <li><a class="dropdown-item" href="asia.html">Ásia</a></li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </nav>
+  
+  <main>
+    <div class="textomain">
+    <h2>Conheça agora os Pontos Turísticos mais Bonitos da Ásia !</h2>
+    </div>
+   <div id="linha">
+    <!-- primiero produto -->
+    <div id="produto">
+        <div id="imgprod">
+            <img src="https://media.istockphoto.com/photos/forbidden-city-beijing-china-picture-id1202091215?k=20&m=1202091215&s=612x612&w=0&h=AMGCdClh7ZnLwi5Fl52OvnMHjbJcP87--HO9Qi1Vqnk=" alt="">
+        </div>
+        <div id="descricao">
+            <h4>Cidade Proibida, Pequim</h4>
+            <img src="https://aux.iconspalace.com/uploads/229216663.png" alt="" >
+        </div>
+    </div>
+    
+    <!-- -------------------------------------------------------------------- -->
+      <!-- primiero produto -->
+      <div id="produto">
+          <div id="imgprod">
+              <img src="https://viagemeturismo.abril.com.br/wp-content/uploads/2021/07/Shizuoka-Prefecture-Tourist-Association-002079.jpg?quality=70&strip=info" alt="">
+          </div>
+          <div id="descricao">
+              <h4>Monte Fuji</h4>
+              <img src="https://www.shareicon.net/data/256x256/2015/07/23/73663_flag_256x256.png" alt="" >
+          </div>
+      </div>
+
+     <!-- -------------------------------------------------------------------- -->
+      <!-- primiero produto -->
+      <div id="produto">
+          <div id="imgprod">
+              <img src="https://varievo.com/wp-content/uploads/Terra%C3%A7os-de-Banaue.jpg" alt="">
+          </div>
+            <div id="descricao">
+              <h4>Terraços de Arroz de Banaue, Filipinas</h4>
+              <img src="https://aux.iconspalace.com/uploads/1570415845.png" alt="" >
+      </div>
+     </div>
+      <!-- -------------------------------------------------------------------- -->
+      <!-- primiero produto -->
+      <div id="produto">
+        <div id="imgprod">
+            <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+        <div id="descricao">
+            <h4>Taj Mahal</h4>
+            <img src="https://icons.veryicon.com/png/Flag/Rounded%20World%20Flags/India%20Flag.png" alt="" >
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------- -->
+      <!-- primiero produto -->
+      <div id="produto">
+        <div id="imgprod">
+            <img src="https://aws-tiqets-cdn.imgix.net/images/content/f3d411d57998475e9c9b23f950e4ff8e.jpg?auto=format&fit=crop&ixlib=python-3.2.1&q=70&s=acea34067051a7380f15c45023e0ad7f" alt="">
+        </div>
+        <div id="descricao">
+            <h4>Torre de Kuala Lumpur, Malasia</h4>
+            <img src="https://aux2.iconspalace.com/uploads/332964294.png" alt="" >
+        </div>
+    </div>
+     <!-- -------------------------------------------------------------------- -->
+            <!-- primiero produto -->
+            <div id="produto">
+              <div id="imgprod">
+                <img src="https://www.viajali.com.br/wp-content/uploads/2019/12/dubai-1.jpg" alt="">
+            </div>
+            <div id="descricao">
+                <h4>Dubai</h4>
+                <img src="https://pt.seaicons.com/wp-content/uploads/2015/08/United-arab-emirates-icon.png" alt="" >
+              </div>
+        </div>
+    
+    <!-- -------------------------------------------------------------------- -->
+      <!-- primiero produto -->
+      <div id="produto">
+        <div id="imgprod">
+            <img src="https://lh3.googleusercontent.com/-CMeQ0ZjnGEY/WFFiaD6btUI/AAAAAAAB8d0/bGFBkpHr5g4DVdYQL-AqbYCp7Gw7oC_LACLIB/w480-h288-n/" alt="">
+        </div>
+        <div id="descricao">
+            <h4>Santuário da Verdade</h4>
+            <img src="https://aux.iconspalace.com/uploads/13992494041374713507.png" alt="" >
+        </div>
+    </div>
+  <!-- -------------------------------------------------------------------- -->
+            <!-- primiero produto -->
+            <div id="produto">
+              <div id="imgprod">
+                  <img src="https://www.s2vistos.com.br/wp-content/uploads/2020/06/Muralha-da-China-vista-do-espa%C3%A7o-min.jpg" alt="">
+              </div>
+              <div id="descricao">
+                  <h4>Muralha da China</h4>
+                  <img src="https://aux.iconspalace.com/uploads/229216663.png" alt="" >
+              </div>
+        </div>
+      </div>  
+    
+    
+  </main>
+  <footer>
+
+    <div id="redes">
+        <ul>
+            <li><a href="sobrenos.html" class="link">Sobre Nós</a></li>
+            <li><a href="http://www.facebook.com" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-256/facebook-logo-2019-1597680-1350125.png" alt="Acesse nosso Facebook"></a></li>
+            <li><a href="http://www.instagram.com" target="_blank"><img src="https://www.designbust.com/download/625/png/instagram_logo_transparent256.png" alt="Acesse nosso instagram"></a></li>
+        </ul>
+    </div>
+</footer>
+  
+  
+  
+
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
